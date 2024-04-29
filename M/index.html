@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Agriculture Chatbot</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      .chatbot-container {
+        width: 400px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+      .chatbot-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .chatbot-header h2 {
+        margin: 0;
+      }
+      .chatbot-header button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition: transform 0.2s;
+      }
+      .chatbot-header button:hover {
+        transform: rotate(90deg);
+      }
+      .chatbot-messages {
+        flex: 1;
+        overflow-y: auto;
+        margin-bottom: 20px;
+      }
+      .chatbot-message {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+      .chatbot-message p {
+        margin: 0;
+        padding: 10px;
+        border-radius: 5px;
+        max-width: 70%;
+      }
+      .chatbot-message.user {
+        align-items: flex-end;
+      }
+      .chatbot-message.user p {
+        background-color: #dcf8c6;
+      }
+      .chatbot-message.bot {
+        align-items: flex-start;
+      }
+      .chatbot-message.bot p {
+        background-color: #e5f5e0;
+      }
+      .chatbot-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .chatbot-input input {
+        flex: 1;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .chatbot-input button {
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .chatbot-input button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chatbot-container">
+      <div class="chatbot-header">
+        <h2>Agriculture Chatbot</h2>
+        <button title="Minimize chatbot"> minimize</button>
+      </div>
+      <div class="chatbot-messages">
+        <div class="chatbot-message user">
+          <p>Hello, can you help me with farming?</p>
+        </div>
+        <div class="chatbot-message bot">
+          <p>Of course! I can provide information on crop selection, soil management, pest control, and more. What would you like to know?</p>
+        </div>
+      </div>
+      <div class="chatbot-input">
+        <input type="text" placeholder="Type your message here..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script>
+      function sendMessage() {
+        const userInput = document.querySelector('.chatbot-input input').value.trim();
+        if (userInput) {
+          const userMessageElement = createMessageElement(userInput, 'user');
+          document.querySelector('.chatbot-messages').appendChild(userMessageElement);
+          document.querySelector('.chatbot-messages').scrollTop = document.querySelector('.chatbot-messages').scrollHeight;
+
+          // Send the user message to the backend
+          fetch(`/home/${encodeURIComponent(userInput)}`)
+            .then(response => response.json())
+            .then(data => {
+              const botMessageElement = createMessageElement(data, 'bot');
+              document.querySelector('.chatbot-messages').appendChild(botMessageElement);
+              document.querySelector('.chatbot-messages').scrollTop = document.querySelector('.chatbot-messages').scrollHeight;
+            })
+            .catch(error => {
+              console.error('Error:', error);
+            });
+
+          document.querySelector('.chatbot-input input').value = '';
+        }
+      }
+
+      function createMessageElement(text, type) {
+        const messageElement = document.createElement('div');
+        messageElement.classList.add('chatbot-message', type);
+        const messageTextElement = document.createElement('p');
+        messageTextElement.textContent = text;
+        messageElement.appendChild(messageTextElement);
+        return messageElement;
+      }
+    </script>
+  </body>
+</html>

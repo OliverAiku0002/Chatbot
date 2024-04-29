@@ -1,0 +1,1238 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+            "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+            "context": [""]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+            "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+            "context": [""]
+        },
+        {
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"],
+            "context": [""]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+            "context": [""]
+        },
+        {
+            "tag": "options",
+            "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+            "responses": ["I am like your virtual assistant, you can ask me any questions. If I know I will answer", "I can answer your questions related to machine learning or any general anser. Come on try me", "I can chat with you. Come on talk me buddy", "We both can chat and make each other happy"],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_krishna",
+            "patterns": [
+                "What crops are recommended in Krishna district?",
+                "Suggest crops for Krishna district agriculture",
+                "Best crops for Krishna district",
+                "Crop recommendation for Krishna district"
+            ],
+            "responses": [
+                "For Krishna district, crops like rice, sugarcane, mango, and turmeric are recommended due to suitable climatic conditions and soil types."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_guntur",
+            "patterns": [
+                "What crops are recommended in Guntur district?",
+                "Suggest crops for Guntur district agriculture",
+                "Best crops for Guntur district",
+                "Crop recommendation for Guntur district"
+            ],
+            "responses": [
+                "In Guntur district, crops like chillies, cotton, turmeric, and pulses are recommended due to the predominance of fertile black soil and favorable climatic conditions."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_health_krishna",
+            "patterns": [
+                "How is the soil health in Krishna district?",
+                "What is the soil type in Krishna district?",
+                "Soil analysis for Krishna district",
+                "Krishna district soil health"
+            ],
+            "responses": [
+                "Krishna district has a varied soil type including black soil, alluvial soil, and red soil. These soils support a wide range of crops including rice, sugarcane, fruits, and vegetables."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_health_guntur",
+            "patterns": [
+                "How is the soil health in Guntur district?",
+                "What is the soil type in Guntur district?",
+                "Soil analysis for Guntur district",
+                "Guntur district soil health"
+            ],
+            "responses": [
+                "Guntur district predominantly has fertile black soil, suitable for growing crops like chillies, cotton, turmeric, and pulses. However, periodic soil testing is recommended for better management practices."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_methods_krishna",
+            "patterns": [
+                "What are the common irrigation methods used in Krishna district?",
+                "Irrigation techniques in Krishna district",
+                "Best irrigation practices in Krishna district"
+            ],
+            "responses": [
+                "In Krishna district, common irrigation methods include drip irrigation, sprinkler irrigation, and canal irrigation. These methods help in efficient water management and improving crop yields."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_methods_guntur",
+            "patterns": [
+                "What are the common irrigation methods used in Guntur district?",
+                "Irrigation techniques in Guntur district",
+                "Best irrigation practices in Guntur district"
+            ],
+            "responses": [
+                "In Guntur district, common irrigation methods include drip irrigation, canal irrigation, and borewell irrigation. These methods play a crucial role in ensuring adequate water supply for crops throughout the year."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_management_krishna",
+            "patterns": [
+                "How to manage pests in crops in Krishna district?",
+                "Pest control methods for agriculture in Krishna district",
+                "Dealing with crop pests in Krishna district"
+            ],
+            "responses": [
+                "Integrated pest management (IPM) practices are commonly used in Krishna district, which involve a combination of cultural, biological, and chemical control measures to minimize pest damage while reducing environmental impact."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_management_guntur",
+            "patterns": [
+                "How to manage pests in crops in Guntur district?",
+                "Pest control methods for agriculture in Guntur district",
+                "Dealing with crop pests in Guntur district"
+            ],
+            "responses": [
+                "Guntur district farmers employ integrated pest management (IPM) practices to combat crop pests effectively. These methods include crop rotation, biological control, and judicious use of pesticides."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_diversification_krishna",
+            "patterns": [
+                "Is crop diversification practiced in Krishna district?",
+                "Crop rotation in Krishna district",
+                "Benefits of crop diversification in Krishna district"
+            ],
+            "responses": [
+                "Crop diversification is encouraged in Krishna district to maintain soil fertility, reduce pest pressure, and mitigate risks associated with monoculture. Farmers often rotate crops like paddy, pulses, vegetables, and fruits."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_diversification_guntur",
+            "patterns": [
+                "Is crop diversification practiced in Guntur district?",
+                "Crop rotation in Guntur district",
+                "Benefits of crop diversification in Guntur district"
+            ],
+            "responses": [
+                "Guntur district farmers implement crop diversification strategies to enhance soil health and reduce dependence on a single crop. Crop rotation with pulses, oilseeds, and commercial crops is common in the region."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_yield_krishna",
+            "patterns": [
+                "What are the average crop yields in Krishna district?",
+                "Crop yield statistics for Krishna district",
+                "Krishna district crop production data"
+            ],
+            "responses": [
+                "The average crop yields in Krishna district vary depending on factors like crop type, agricultural practices, and weather conditions. However, rice, sugarcane, and mango are among the high-yielding crops in the region."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_yield_guntur",
+            "patterns": [
+                "What are the average crop yields in Guntur district?",
+                "Crop yield statistics for Guntur district",
+                "Guntur district crop production data"
+            ],
+            "responses": [
+                "Guntur district witnesses high crop yields due to fertile soil and favorable agro-climatic conditions. Crop yield statistics vary annually but crops like chillies, cotton, and turmeric are known for their high productivity."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_krishna_rice",
+            "patterns": [
+                "Which rice varieties are recommended in Krishna district?",
+                "Best rice varieties for Krishna district",
+                "Recommended rice varieties for Krishna district agriculture"
+            ],
+            "responses": [
+                "In Krishna district, popular rice varieties recommended include Sona Masoori, BPT 5204, MTU 1010, and JGL 386. These varieties are known for their high yield potential and suitability to local agro-climatic conditions."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_krishna_sugarcane",
+            "patterns": [
+                "Which sugarcane varieties are recommended in Krishna district?",
+                "Best sugarcane varieties for Krishna district",
+                "Recommended sugarcane varieties for Krishna district agriculture"
+            ],
+            "responses": [
+                "For sugarcane cultivation in Krishna district, CO 86032, Co 99004, and Co 86032 are recommended varieties. These varieties are well-adapted to the local soil and climate, offering good yield potential and disease resistance."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_krishna_mango",
+            "patterns": [
+                "Which mango varieties are recommended in Krishna district?",
+                "Best mango varieties for Krishna district",
+                "Recommended mango varieties for Krishna district agriculture"
+            ],
+            "responses": [
+                "Krishna district is suitable for mango cultivation, with varieties like Banganapalli, Suvernarekha, and Totapuri being recommended. These varieties are renowned for their excellent taste, yield, and market demand."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_krishna_turmeric",
+            "patterns": [
+                "Which turmeric varieties are recommended in Krishna district?",
+                "Best turmeric varieties for Krishna district",
+                "Recommended turmeric varieties for Krishna district agriculture"
+            ],
+            "responses": [
+                "For turmeric cultivation in Krishna district, varieties like Salem, Erode, and Alleppey Supreme are recommended. These varieties offer high curcumin content, good yield, and resistance to pests and diseases."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_guntur_chillies",
+            "patterns": [
+                "Which chilli varieties are recommended in Guntur district?",
+                "Best chilli varieties for Guntur district",
+                "Recommended chilli varieties for Guntur district agriculture"
+            ],
+            "responses": [
+                "Guntur district is renowned for its chilli cultivation, with varieties like Guntur Sannam, Teja, and Byadgi being recommended. These varieties are known for their pungency, color, and market demand."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_guntur_cotton",
+            "patterns": [
+                "Which cotton varieties are recommended in Guntur district?",
+                "Best cotton varieties for Guntur district",
+                "Recommended cotton varieties for Guntur district agriculture"
+            ],
+            "responses": [
+                "For cotton cultivation in Guntur district, varieties like MCU 5, NHH 44, and Bunny are recommended. These varieties offer good fiber quality, high yield potential, and resistance to pests and diseases."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_guntur_turmeric",
+            "patterns": [
+                "Which turmeric varieties are recommended in Guntur district?",
+                "Best turmeric varieties for Guntur district",
+                "Recommended turmeric varieties for Guntur district agriculture"
+            ],
+            "responses": [
+                "Guntur district is also suitable for turmeric cultivation, with varieties like Salem, Erode, and Alleppey Supreme being recommended. These varieties offer high curcumin content and good yield potential."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_types_krishna_black_soil",
+            "patterns": [
+                "What is the black soil composition in Krishna district?",
+                "Details about black soil in Krishna district",
+                "Krishna district black soil characteristics"
+            ],
+            "responses": [
+                "Black soil in Krishna district is characterized by its high fertility, clayey texture, and rich organic content. It is suitable for crops like cotton, turmeric, and pulses."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_types_krishna_alluvial_soil",
+            "patterns": [
+                "What is the alluvial soil composition in Krishna district?",
+                "Details about alluvial soil in Krishna district",
+                "Krishna district alluvial soil characteristics"
+            ],
+            "responses": [
+                "Alluvial soil in Krishna district is formed by the deposition of silt and clay brought by rivers. It is well-drained and suitable for crops like rice, sugarcane, and vegetables."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_types_krishna_red_soil",
+            "patterns": [
+                "What is the red soil composition in Krishna district?",
+                "Details about red soil in Krishna district",
+                "Krishna district red soil characteristics"
+            ],
+            "responses": [
+                "Red soil in Krishna district is characterized by its sandy to loamy texture and low fertility. It is suitable for crops like groundnut, pulses, and millets with proper nutrient management."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_types_guntur_black_soil",
+            "patterns": [
+                "What is the black soil composition in Guntur district?",
+                "Details about black soil in Guntur district",
+                "Guntur district black soil characteristics"
+            ],
+            "responses": [
+                "Black soil in Guntur district is rich in clay and organic matter, making it highly fertile. It is suitable for crops like chillies, cotton, and turmeric."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_types_guntur_alluvial_soil",
+            "patterns": [
+                "What is the alluvial soil composition in Guntur district?",
+                "Details about alluvial soil in Guntur district",
+                "Guntur district alluvial soil characteristics"
+            ],
+            "responses": [
+                "Alluvial soil in Guntur district is formed by the deposition of sediment carried by rivers. It is well-drained and suitable for crops like rice, maize, and sugarcane."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_types_guntur_red_soil",
+            "patterns": [
+                "What is the red soil composition in Guntur district?",
+                "Details about red soil in Guntur district",
+                "Guntur district red soil characteristics"
+            ],
+            "responses": [
+                "Red soil in Guntur district is characterized by its sandy to clayey texture and low fertility. It is suitable for crops like groundnut, pulses, and oilseeds with proper soil amendments."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_techniques_krishna_drip_irrigation",
+            "patterns": [
+                "How is drip irrigation practiced in Krishna district?",
+                "Details about drip irrigation in Krishna district",
+                "Krishna district drip irrigation techniques"
+            ],
+            "responses": [
+                "Drip irrigation in Krishna district involves the precise application of water to the root zone of crops through a network of pipes and emitters. It helps in efficient water use and improved crop yields."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_techniques_krishna_canal_irrigation",
+            "patterns": [
+                "How is canal irrigation practiced in Krishna district?",
+                "Details about canal irrigation in Krishna district",
+                "Krishna district canal irrigation techniques"
+            ],
+            "responses": [
+                "Canal irrigation in Krishna district involves diverting water from rivers or reservoirs into irrigation canals for distribution to agricultural fields. It provides reliable water supply for crops like rice, sugarcane, and pulses."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_techniques_guntur_sprinkler_irrigation",
+            "patterns": [
+                "How is sprinkler irrigation practiced in Guntur district?",
+                "Details about sprinkler irrigation in Guntur district",
+                "Guntur district sprinkler irrigation techniques"
+            ],
+            "responses": [
+                "Sprinkler irrigation in Guntur district involves spraying water over the crops in the form of fine droplets through a network of pipes and sprinklers. It ensures uniform water distribution and minimizes water wastage."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_techniques_guntur_borewell_irrigation",
+            "patterns": [
+                "How is borewell irrigation practiced in Guntur district?",
+                "Details about borewell irrigation in Guntur district",
+                "Guntur district borewell irrigation techniques"
+            ],
+            "responses": [
+                "Borewell irrigation in Guntur district involves extracting groundwater using borewells equipped with pumps for irrigation purposes. It provides on-demand water supply for crops throughout the year."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_management_krishna_integrated_pest_management",
+            "patterns": [
+                "How is integrated pest management practiced in Krishna district?",
+                "Details about integrated pest management in Krishna district",
+                "Krishna district integrated pest management strategies"
+            ],
+            "responses": [
+                "Integrated pest management (IPM) in Krishna district involves the use of cultural, biological, and chemical control measures to manage pest populations effectively while minimizing environmental impact and ensuring sustainable crop production."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_management_krishna_biocontrol_agents",
+            "patterns": [
+                "What are the biocontrol agents used in pest management in Krishna district?",
+                "Details about biocontrol agents in Krishna district",
+                "Krishna district biocontrol agents for pest management"
+            ],
+            "responses": [
+                "Biocontrol agents like Trichogramma, Bacillus thuringiensis, and Chrysoperla carnea are commonly used in Krishna district for natural pest suppression. These agents help in controlling pests while minimizing pesticide use."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_recommendation_anantapur",
+            "patterns": ["What crops are recommended in Anantapur district?", "Suggest crops for Anantapur district agriculture", "Best crops for Anantapur district", "Crop recommendation for Anantapur district"],
+            "responses": ["In Anantapur district, crops like groundnut, paddy, sweet orange, mango, and vegetables are recommended due to suitable soil and rainfall conditions."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_chittoor",
+            "patterns": ["What crops are recommended in Chittoor district?", "Suggest crops for Chittoor district agriculture", "Best crops for Chittoor district", "Crop recommendation for Chittoor district"],
+            "responses": ["In Chittoor district, crops like cashew nuts, mango, tomato, papaya, and tamarind are recommended due to favorable climatic conditions and soil types."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_east_godavari",
+            "patterns": ["What crops are recommended in East Godavari district?", "Suggest crops for East Godavari district agriculture", "Best crops for East Godavari district", "Crop recommendation for East Godavari district"],
+            "responses": ["In East Godavari district, crops like paddy, maize, sugarcane, mango, and banana are recommended due to favorable agro-climatic conditions and soil fertility."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_guntur",
+            "patterns": ["What crops are recommended in Guntur district?", "Suggest crops for Guntur district agriculture", "Best crops for Guntur district", "Crop recommendation for Guntur district"],
+            "responses": ["In Guntur district, crops like paddy, cotton, chilli, tobacco, and turmeric are recommended due to fertile black soil and favorable climatic conditions."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_krishna",
+            "patterns": ["What crops are recommended in Krishna district?", "Suggest crops for Krishna district agriculture", "Best crops for Krishna district", "Crop recommendation for Krishna district"],
+            "responses": ["For Krishna district, crops like rice, sugarcane, mango, and turmeric are recommended due to suitable climatic conditions and soil types."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_kurnool",
+            "patterns": ["What crops are recommended in Kurnool district?", "Suggest crops for Kurnool district agriculture", "Best crops for Kurnool district", "Crop recommendation for Kurnool district"],
+            "responses": ["In Kurnool district, crops like chickpea, groundnut, sunflower, rice, and maize are recommended due to suitable climate and soil conditions."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_prakasam",
+            "patterns": ["What crops are recommended in Prakasam district?", "Suggest crops for Prakasam district agriculture", "Best crops for Prakasam district", "Crop recommendation for Prakasam district"],
+            "responses": ["In Prakasam district, crops like chickpea, paddy, red gram, tobacco, and cotton are recommended due to soil suitability and agro-climatic conditions."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_srikakulam",
+            "patterns": ["What crops are recommended in Srikakulam district?", "Suggest crops for Srikakulam district agriculture", "Best crops for Srikakulam district", "Crop recommendation for Srikakulam district"],
+            "responses": ["In Srikakulam district, crops like paddy, peanuts, sugarcane, mango, and chilli are recommended due to favorable soil and climate conditions."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_visakhapatnam",
+            "patterns": ["What crops are recommended in Visakhapatnam district?", "Suggest crops for Visakhapatnam district agriculture", "Best crops for Visakhapatnam district", "Crop recommendation for Visakhapatnam district"],
+            "responses": ["In Visakhapatnam district, crops like paddy, cashew nuts, coconut, mango, and rubber are recommended due to suitable climatic conditions and soil fertility."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_vizianagaram",
+            "patterns": ["What crops are recommended in Vizianagaram district?", "Suggest crops for Vizianagaram district agriculture", "Best crops for Vizianagaram district", "Crop recommendation for Vizianagaram district"],
+            "responses": ["For Vizianagaram district, crops like paddy, sugarcane, mango, cashew nuts, and coconut are recommended due to suitable soil and climatic conditions."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_west_godavari",
+            "patterns": ["What crops are recommended in West Godavari district?", "Suggest crops for West Godavari district agriculture", "Best crops for West Godavari district", "Crop recommendation for West Godavari district"],
+            "responses": ["In West Godavari district, crops like paddy, sugarcane, banana, mango, and turmeric are recommended due to suitable agro-climatic conditions and fertile soil."],
+            "context": [""]
+          },
+          {
+            "tag": "crop_recommendation_krishna_district",
+            "patterns": ["What crops are recommended in Krishna district?", "Suggest crops for Krishna district agriculture", "Best crops for Krishna district", "Crop recommendation for Krishna district"],
+            "responses": ["In Krishna district, major crops include rice (paddy), sugarcane, mango, turmeric, banana, chillies, coconut, cashew nuts, and groundnut."],
+            "context": [""]
+          },
+          {
+            "tag": "soil_types_tenali",
+            "patterns": [
+                "What are the soil types in Tenali Mandal?",
+                "Details about soil types in Tenali Mandal",
+                "Tenali Mandal soil composition"
+            ],
+            "responses": [
+                "Soil types in Tenali Mandal include black soil, alluvial soil, and red soil. Each soil type has its unique characteristics and suitability for different crops."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_techniques_narasaraopet",
+            "patterns": [
+                "How is irrigation practiced in Narasaraopet Mandal?",
+                "Details about irrigation techniques in Narasaraopet Mandal",
+                "Narasaraopet Mandal irrigation methods"
+            ],
+            "responses": [
+                "Irrigation in Narasaraopet Mandal is primarily done through canal irrigation, borewell irrigation, and drip irrigation. Farmers utilize various techniques based on water availability and crop requirements."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_management_mangalagiri",
+            "patterns": [
+                "What are the pest management strategies in Mangalagiri Mandal?",
+                "Details about pest management in Mangalagiri Mandal",
+                "Mangalagiri Mandal pest control methods"
+            ],
+            "responses": [
+                "Pest management in Mangalagiri Mandal includes integrated pest management (IPM) practices such as crop rotation, biological control, and judicious use of pesticides. Farmers adopt sustainable approaches to minimize pest damage and maintain crop health."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_diversification_chilakaluripet",
+            "patterns": [
+                "What are the crop diversification initiatives in Chilakaluripet Mandal?",
+                "Details about crop diversification in Chilakaluripet Mandal",
+                "Chilakaluripet Mandal crop diversification programs"
+            ],
+            "responses": [
+                "Crop diversification in Chilakaluripet Mandal focuses on promoting alternative crops alongside traditional ones. Initiatives include introducing high-value crops, encouraging intercropping, and supporting farmers in adopting modern farming practices for sustainable agricultural development."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_types_vijayawada",
+            "patterns": [
+                "What are the soil types in Vijayawada Mandal?",
+                "Details about soil types in Vijayawada Mandal",
+                "Vijayawada Mandal soil composition"
+            ],
+            "responses": [
+                "Soil types in Vijayawada Mandal include black soil, sandy soil, and clay soil. Each soil type has its unique characteristics and suitability for different crops."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_techniques_machilipatnam",
+            "patterns": [
+                "How is irrigation practiced in Machilipatnam Mandal?",
+                "Details about irrigation techniques in Machilipatnam Mandal",
+                "Machilipatnam Mandal irrigation methods"
+            ],
+            "responses": [
+                "Irrigation in Machilipatnam Mandal is primarily done through canal irrigation, tank irrigation, and drip irrigation. Farmers utilize various techniques based on water availability and crop requirements."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_management_gudivada",
+            "patterns": [
+                "What are the pest management strategies in Gudivada Mandal?",
+                "Details about pest management in Gudivada Mandal",
+                "Gudivada Mandal pest control methods"
+            ],
+            "responses": [
+                "Pest management in Gudivada Mandal includes integrated pest management (IPM) practices such as crop rotation, biological control, and judicious use of pesticides. Farmers adopt sustainable approaches to minimize pest damage and maintain crop health."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_diversification_nuzvid",
+            "patterns": [
+                "What are the crop diversification initiatives in Nuzvid Mandal?",
+                "Details about crop diversification in Nuzvid Mandal",
+                "Nuzvid Mandal crop diversification programs"
+            ],
+            "responses": [
+                "Crop diversification in Nuzvid Mandal focuses on promoting alternative crops alongside traditional ones. Initiatives include introducing high-value crops, encouraging intercropping, and supporting farmers in adopting modern farming practices for sustainable agricultural development."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_management_jaggayyapeta",
+            "patterns": [
+                "What are the pest management strategies in Jaggayyapeta Mandal?",
+                "Details about pest management in Jaggayyapeta Mandal",
+                "Jaggayyapeta Mandal pest control methods"
+            ],
+            "responses": [
+                "Pest management in Jaggayyapeta Mandal includes integrated pest management (IPM) practices such as crop rotation, biological control, and judicious use of pesticides. Farmers adopt sustainable approaches to minimize pest damage and maintain crop health."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_management_vijayawada",
+            "patterns": [
+                "What are the soil management practices in Vijayawada Mandal?",
+                "How to improve soil health in Vijayawada Mandal?",
+                "Vijayawada Mandal soil management techniques"
+            ],
+            "responses": [
+                "Soil management in Vijayawada Mandal includes practices such as soil testing, organic matter addition, crop rotation, and mulching to enhance soil fertility and structure."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_management_machilipatnam",
+            "patterns": [
+                "What are the irrigation methods used in Machilipatnam Mandal?",
+                "How is water managed in Machilipatnam Mandal?",
+                "Machilipatnam Mandal irrigation practices"
+            ],
+            "responses": [
+                "Irrigation in Machilipatnam Mandal includes techniques like drip irrigation, sprinkler irrigation, and canal irrigation, ensuring efficient water use and optimal crop growth."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "weather_climate_gudivada",
+            "patterns": [
+                "What is the weather forecast for Gudivada Mandal?",
+                "How does climate affect agriculture in Gudivada Mandal?",
+                "Gudivada Mandal weather conditions"
+            ],
+            "responses": [
+                "Weather in Gudivada Mandal is typically warm and humid, favorable for growing a variety of crops. However, seasonal variations and extreme weather events may impact agricultural activities."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_disease_management_nuzvid",
+            "patterns": [
+                "How to control pests and diseases in Nuzvid Mandal?",
+                "What are the common pests in Nuzvid Mandal?",
+                "Nuzvid Mandal pest management strategies"
+            ],
+            "responses": [
+                "Pest and disease management in Nuzvid Mandal involves integrated pest management (IPM) practices, including biological control, cultural practices, and judicious use of pesticides to minimize crop damage."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_protection_jaggayyapeta",
+            "patterns": [
+                "How to protect crops from birds and animals in Jaggayyapeta Mandal?",
+                "What are the crop protection measures in Jaggayyapeta Mandal?",
+                "Jaggayyapeta Mandal crop protection techniques"
+            ],
+            "responses": [
+                "Crop protection in Jaggayyapeta Mandal includes methods such as installing nets, fences, scarecrows, and using repellents to deter birds, animals, and pests from damaging crops."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "market_info_tenali",
+            "patterns": [
+                "What is the market price of rice in Tenali Mandal?",
+                "Where can I find market information for Tenali Mandal?",
+                "Tenali Mandal agricultural market details"
+            ],
+            "responses": [
+                "Market information for Tenali Mandal, including crop prices, demand-supply trends, and market locations, can be obtained from local agricultural market committees, government agricultural departments, and online platforms."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "farm_technology_narasaraopet",
+            "patterns": [
+                "What are the latest farm technologies used in Narasaraopet Mandal?",
+                "How to adopt modern farm equipment in Narasaraopet Mandal?",
+                "Narasaraopet Mandal farm technology innovations"
+            ],
+            "responses": [
+                "Farmers in Narasaraopet Mandal adopt modern agricultural technologies such as precision farming, drones, soil sensors, and GPS-guided machinery to enhance productivity and efficiency."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "livestock_management_mangalagiri",
+            "patterns": [
+                "What are the best practices for livestock management in Mangalagiri Mandal?",
+                "How to improve dairy farming in Mangalagiri Mandal?",
+                "Mangalagiri Mandal livestock care tips"
+            ],
+            "responses": [
+                "Livestock management in Mangalagiri Mandal involves providing proper nutrition, healthcare, and housing facilities for animals. Dairy farming practices include breed selection, feeding regimes, and hygiene maintenance."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "government_schemes_gudivada",
+            "patterns": [
+                "What are the government schemes available for farmers in Gudivada Mandal?",
+                "How to avail subsidies for agriculture in Gudivada Mandal?",
+                "Gudivada Mandal agricultural policies"
+            ],
+            "responses": [
+                "Farmers in Gudivada Mandal can benefit from various government schemes such as crop insurance, subsidies for seeds, fertilizers, and machinery, and financial assistance for agricultural development projects."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "agricultural_education_nuzvid",
+            "patterns": [
+                "Where can I get agricultural education in Nuzvid Mandal?",
+                "What are the agricultural training programs available in Nuzvid Mandal?",
+                "Nuzvid Mandal agricultural education institutes"
+            ],
+            "responses": [
+                "Agricultural education in Nuzvid Mandal is offered by agricultural universities, colleges, and vocational training institutes. Courses cover various aspects of farming, agribusiness, and rural development."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "farming_advice_jaggayyapeta",
+            "patterns": [
+                "What are the farming tips for Jaggayyapeta Mandal?",
+                "How to improve crop yield in Jaggayyapeta Mandal?",
+                "Jaggayyapeta Mandal farming advice"
+            ],
+            "responses": [
+                "Farming advice for Jaggayyapeta Mandal includes soil testing, crop rotation, pest scouting, and timely irrigation to optimize crop growth and yield."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_management_tenali",
+            "patterns": [
+                "How to prevent soil erosion in Tenali Mandal?",
+                "What are the best soil conservation practices for Tenali Mandal?",
+                "Tenali Mandal soil erosion control methods"
+            ],
+            "responses": [
+                "Soil erosion prevention in Tenali Mandal includes practices like contour plowing, terracing, cover cropping, and mulching to protect soil structure and fertility."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_management_narasaraopet",
+            "patterns": [
+                "How to manage water scarcity in Narasaraopet Mandal?",
+                "What are the drought-resistant irrigation methods for Narasaraopet Mandal?",
+                "Narasaraopet Mandal water management during drought"
+            ],
+            "responses": [
+                "Water management in Narasaraopet Mandal during drought involves techniques such as rainwater harvesting, drip irrigation, soil moisture conservation, and efficient water use practices to mitigate the impact of water scarcity on crops."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "weather_climate_mangalagiri",
+            "patterns": [
+                "What are the climatic conditions for grape cultivation in Mangalagiri Mandal?",
+                "How does temperature affect tea plantation in Mangalagiri Mandal?",
+                "Mangalagiri Mandal climate suitability for specific crops"
+            ],
+            "responses": [
+                "Climatic conditions in Mangalagiri Mandal favor grape cultivation due to moderate temperatures and well-distributed rainfall. Tea plantation thrives in the cool climate and misty weather of the region."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_disease_management_chilakaluripet",
+            "patterns": [
+                "What are the organic pest control methods for Chilakaluripet Mandal?",
+                "How to manage fungal diseases in Chilakaluripet Mandal?",
+                "Chilakaluripet Mandal eco-friendly pest management strategies"
+            ],
+            "responses": [
+                "Organic pest control methods in Chilakaluripet Mandal include neem oil spray, companion planting, and biological control using beneficial insects. Fungal diseases are managed through proper sanitation, crop rotation, and resistant varieties."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_protection_vijayawada_2",
+            "patterns": [
+                "How to protect crops from hailstorms in Vijayawada Mandal?",
+                "What are the hail protection measures for Vijayawada Mandal?",
+                "Vijayawada Mandal crop protection during hailstorms"
+            ],
+            "responses": [
+                "Crop protection during hailstorms in Vijayawada Mandal involves using hail nets, erecting shelters, and timely forecasting to minimize crop damage and losses caused by hail."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "market_info_machilipatnam",
+            "patterns": [
+                "Where can I find information about fish market prices in Machilipatnam Mandal?",
+                "What are the market trends for seafood in Machilipatnam Mandal?",
+                "Machilipatnam Mandal fish market updates"
+            ],
+            "responses": [
+                "Information about fish market prices and trends in Machilipatnam Mandal can be obtained from local fish markets, fisherfolk associations, and online platforms specializing in seafood trade."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "farm_technology_gudivada",
+            "patterns": [
+                "How to implement IoT technology in agriculture in Gudivada Mandal?",
+                "What are the benefits of using drones for farming in Gudivada Mandal?",
+                "Gudivada Mandal precision agriculture techniques"
+            ],
+            "responses": [
+                "Farmers in Gudivada Mandal adopt IoT technology for real-time monitoring of soil moisture, temperature, and crop health. Drones are used for aerial surveys, crop monitoring, and precision spraying, enhancing farming efficiency and productivity."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "livestock_management_nuzvid",
+            "patterns": [
+                "What are the vaccination schedules for poultry farming in Nuzvid Mandal?",
+                "How to prevent mastitis in dairy cattle in Nuzvid Mandal?",
+                "Nuzvid Mandal livestock health management"
+            ],
+            "responses": [
+                "Livestock health management in Nuzvid Mandal includes following vaccination schedules, maintaining hygiene standards, and providing proper nutrition to prevent diseases and ensure the well-being of animals."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "government_schemes_jaggayyapeta",
+            "patterns": [
+                "How to apply for crop insurance in Jaggayyapeta Mandal?",
+                "What are the eligibility criteria for availing subsidies in Jaggayyapeta Mandal?",
+                "Jaggayyapeta Mandal agricultural subsidy programs"
+            ],
+            "responses": [
+                "Farmers in Jaggayyapeta Mandal can apply for crop insurance through designated insurance companies and fulfill eligibility criteria to avail subsidies offered by government schemes for seeds, fertilizers, machinery, and other agricultural inputs."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "agricultural_education_tenali",
+            "patterns": [
+                "Are there any agricultural training institutes in Tenali Mandal?",
+                "How to enroll in agricultural courses in Tenali Mandal?",
+                "Tenali Mandal vocational agriculture programs"
+            ],
+            "responses": [
+                "Agricultural training institutes in Tenali Mandal offer courses on various aspects of farming, agribusiness, and rural development. Interested individuals can enroll in these programs to acquire practical skills and knowledge in agriculture."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "farming_advice_narasaraopet",
+            "patterns": [
+                "What are the crop rotation recommendations for Narasaraopet Mandal?",
+                "How to manage weed infestation in Narasaraopet Mandal?",
+                "Narasaraopet Mandal farming best practices"
+            ],
+            "responses": [
+                "Crop rotation recommendations for Narasaraopet Mandal include alternating between legumes, cereals, and cash crops to maintain soil fertility and control pests and diseases. Weed infestation is managed through manual removal, mulching, and use of herbicides."
+            ],
+            "context": [""]
+        }, 
+        {
+            "tag": "soil_management_tenali",
+            "patterns": [
+                "What are the soil types in Tenali Mandal?",
+                "How to improve soil fertility in Tenali Mandal?",
+                "What are the recommended soil testing methods for Tenali Mandal?"
+            ],
+            "responses": [
+                "Soil types in Tenali Mandal include sandy loam and clay loam. Soil fertility can be improved through organic matter addition, cover cropping, and balanced fertilizer application. Recommended soil testing methods for Tenali Mandal include soil sampling and analysis by accredited laboratories."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_management_narasaraopet",
+            "patterns": [
+                "What are the main irrigation techniques used in Narasaraopet Mandal?",
+                "How to optimize water use efficiency in Narasaraopet Mandal?",
+                "Are there any government schemes for irrigation development in Narasaraopet Mandal?"
+            ],
+            "responses": [
+                "Main irrigation techniques used in Narasaraopet Mandal include drip irrigation, sprinkler irrigation, and flood irrigation. Water use efficiency in Narasaraopet Mandal can be optimized through precision irrigation scheduling, mulching, and adoption of water-saving technologies. Government schemes for irrigation development in Narasaraopet Mandal include the Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) and the Andhra Pradesh Micro Irrigation Project (APMIP)."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "weather_climate_mangalagiri",
+            "patterns": [
+                "What is the average rainfall in Mangalagiri Mandal?",
+                "How does temperature affect crop growth in Mangalagiri Mandal?",
+                "Is there any weather forecasting service available for Mangalagiri Mandal?"
+            ],
+            "responses": [
+                "The average rainfall in Mangalagiri Mandal is around 900-1000 mm per year. Temperature variations in Mangalagiri Mandal impact crop growth patterns, with certain crops thriving in cooler temperatures while others prefer warmer conditions. Weather forecasting services are available for Mangalagiri Mandal through the India Meteorological Department (IMD) and various private weather agencies."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_disease_management_chilakaluripet",
+            "patterns": [
+                "What are the common pests affecting crops in Chilakaluripet Mandal?",
+                "How to control fungal diseases in Chilakaluripet Mandal?",
+                "Are there any organic pest management techniques used in Chilakaluripet Mandal?"
+            ],
+            "responses": [
+                "Common pests affecting crops in Chilakaluripet Mandal include aphids, whiteflies, and leafhoppers. Fungal diseases in Chilakaluripet Mandal can be controlled through proper sanitation, crop rotation, and application of fungicides. Organic pest management techniques used in Chilakaluripet Mandal include neem-based pesticides, biopesticides, and botanical extracts."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_protection_vijayawada_2",
+            "patterns": [
+                "How to protect crops from cyclones in Vijayawada Mandal?",
+                "Are there any natural disaster management plans for crop protection in Vijayawada Mandal?",
+                "What are the best practices for crop sheltering during extreme weather events in Vijayawada Mandal?"
+            ],
+            "responses": [
+                "Crops in Vijayawada Mandal can be protected from cyclones through timely harvesting, securing structures, and using windbreaks. Natural disaster management plans for crop protection in Vijayawada Mandal include early warning systems and evacuation strategies. Best practices for crop sheltering during extreme weather events in Vijayawada Mandal include constructing sturdy shelters, reinforcing crop covers, and providing temporary shade."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "market_info_machilipatnam",
+            "patterns": [
+                "Where can I find information about vegetable prices in Machilipatnam Mandal?",
+                "How to access market reports for rice in Machilipatnam Mandal?",
+                "Are there any online platforms for commodity trading in Machilipatnam Mandal?"
+            ],
+            "responses": [
+                "Information about vegetable prices in Machilipatnam Mandal can be found at local markets, agricultural extension offices, and online price tracking platforms. Market reports for rice in Machilipatnam Mandal are available through government agricultural departments and market research agencies. Online platforms for commodity trading in Machilipatnam Mandal include eNAM (National Agriculture Market) and agricultural commodity exchanges."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "farm_technology_gudivada",
+            "patterns": [
+                "What are the latest farm equipment technologies available in Gudivada Mandal?",
+                "How to adopt precision farming techniques in Gudivada Mandal?",
+                "Are there any subsidies for farm technology adoption in Gudivada Mandal?"
+            ],
+            "responses": [
+                "Latest farm equipment technologies available in Gudivada Mandal include GPS-guided tractors, drones for aerial imaging, and smart irrigation controllers. Precision farming techniques in Gudivada Mandal can be adopted through soil sensors, remote sensing, and data analytics. Subsidies for farm technology adoption in Gudivada Mandal are provided under government schemes like the Mission for Integrated Development of Horticulture (MIDH) and the Rashtriya Krishi Vikas Yojana (RKVY)."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "livestock_management_nuzvid",
+            "patterns": [
+                "What are the key health issues in dairy cattle farming in Nuzvid Mandal?",
+                "How to improve livestock productivity in Nuzvid Mandal?",
+                "Are there any training programs for livestock management in Nuzvid Mandal?"
+            ],
+            "responses": [
+                "Key health issues in dairy cattle farming in Nuzvid Mandal include mastitis, foot rot, and nutritional deficiencies. Livestock productivity in Nuzvid Mandal can be improved through proper nutrition, vaccination, and genetic selection. Training programs for livestock management in Nuzvid Mandal are offered by government veterinary departments, agricultural universities, and private animal husbandry organizations."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "government_schemes_jaggayyapeta",
+            "patterns": [
+                "How to apply for crop insurance under the Pradhan Mantri Fasal Bima Yojana (PMFBY) in Jaggayyapeta Mandal?",
+                "What are the benefits of the Soil Health Card scheme for farmers in Jaggayyapeta Mandal?",
+                "Are there any subsidies available for drip irrigation installation in Jaggayyapeta Mandal?"
+            ],
+            "responses": [
+                "Crop insurance under the Pradhan Mantri Fasal Bima Yojana (PMFBY) in Jaggayyapeta Mandal can be applied through authorized insurance companies or online portals. The Soil Health Card scheme provides benefits to farmers in Jaggayyapeta Mandal by assessing soil fertility and recommending appropriate nutrient management practices. Subsidies for drip irrigation installation in Jaggayyapeta Mandal are available under government schemes like the Per Drop More Crop component of the Pradhan Mantri Krishi Sinchayee Yojana (PMKSY)."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "agricultural_education_mangalagiri",
+            "patterns": [
+                "What are the admission requirements for agricultural courses at the Acharya N.G. Ranga Agricultural University (ANGRAU) in Mangalagiri Mandal?",
+                "How to enroll in skill development programs for agriculture in Mangalagiri Mandal?",
+                "Are there any scholarships available for agricultural students in Mangalagiri Mandal?"
+            ],
+            "responses": [
+                "Admission requirements for agricultural courses at the Acharya N.G. Ranga Agricultural University (ANGRAU) in Mangalagiri Mandal include qualifying exams like EAMCET or AGRICET and meeting the university's eligibility criteria. Enrollment in skill development programs for agriculture in Mangalagiri Mandal can be done through government-sponsored training centers, agricultural universities, and online platforms. Scholarships for agricultural students in Mangalagiri Mandal are available under various government schemes like the National Scholarship Portal and state-specific scholarship programs."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "farming_advice_chilakaluripet",
+            "patterns": [
+                "How to prevent soil erosion in Chilakaluripet Mandal?",
+                "What are the best practices for intercropping in Chilakaluripet Mandal?",
+                "Are there any community-based farming initiatives in Chilakaluripet Mandal?"
+            ],
+            "responses": [
+                "Soil erosion in Chilakaluripet Mandal can be prevented through contour plowing, terracing, and agroforestry practices. Best practices for intercropping in Chilakaluripet Mandal include selecting compatible crop combinations, optimizing spacing, and managing nutrient competition. Community-based farming initiatives in Chilakaluripet Mandal involve collaborative farming ventures, farmer producer organizations (FPOs), and cooperative societies."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_management_vijayawada",
+            "patterns": [
+                "What are the recommended soil conservation methods in Vijayawada Mandal?",
+                "How to maintain soil health in Vijayawada Mandal?",
+                "Are there any organic farming practices for soil enrichment in Vijayawada Mandal?"
+            ],
+            "responses": [
+                "Recommended soil conservation methods in Vijayawada Mandal include contour bunding, cover cropping, and mulching. Soil health in Vijayawada Mandal can be maintained through crop rotation, green manuring, and minimal tillage practices. Organic farming practices for soil enrichment in Vijayawada Mandal include composting, vermicomposting, and biofertilizer application."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_management_machilipatnam",
+            "patterns": [
+                "How to manage waterlogging in Machilipatnam Mandal?",
+                "What are the benefits of using micro-irrigation systems in Machilipatnam Mandal?",
+                "Are there any government subsidies for borewell construction in Machilipatnam Mandal?"
+            ],
+            "responses": [
+                "Waterlogging in Machilipatnam Mandal can be managed through land leveling, improved drainage systems, and crop diversification. Benefits of using micro-irrigation systems in Machilipatnam Mandal include water savings, improved crop yields, and reduced labor costs. Government subsidies for borewell construction in Machilipatnam Mandal are available under schemes like the Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) and state agricultural subsidy programs."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "weather_climate_gudivada",
+            "patterns": [
+                "What is the impact of climate change on agriculture in Gudivada Mandal?",
+                "How to mitigate heat stress in crops in Gudivada Mandal?",
+                "Are there any weather-resistant crop varieties suitable for Gudivada Mandal?"
+            ],
+            "responses": [
+                "The impact of climate change on agriculture in Gudivada Mandal includes changes in rainfall patterns, temperature extremes, and increased pest pressure. Heat stress in crops in Gudivada Mandal can be mitigated through timely irrigation, shading, and selecting heat-tolerant crop varieties. Weather-resistant crop varieties suitable for Gudivada Mandal are bred to withstand drought, heat, and other adverse weather conditions."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_disease_management_nuzvid",
+            "patterns": [
+                "How to control nematode infestation in Nuzvid Mandal?",
+                "What are the symptoms of viral diseases in crops in Nuzvid Mandal?",
+                "Are there any biological control methods for pest management in Nuzvid Mandal?"
+            ],
+            "responses": [
+                "Nematode infestation in Nuzvid Mandal can be controlled through crop rotation, soil solarization, and application of biopesticides. Symptoms of viral diseases in crops in Nuzvid Mandal include leaf curling, yellowing, and stunted growth. Biological control methods for pest management in Nuzvid Mandal include releasing natural predators, using microbial pesticides, and practicing habitat manipulation."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_protection_jaggayyapeta",
+            "patterns": [
+                "How to prevent post-harvest losses in Jaggayyapeta Mandal?",
+                "What are the storage methods for perishable crops in Jaggayyapeta Mandal?",
+                "Are there any fumigation techniques for grain storage in Jaggayyapeta Mandal?"
+            ],
+            "responses": [
+                "Post-harvest losses in Jaggayyapeta Mandal can be prevented through proper handling, storage, and transportation practices. Storage methods for perishable crops in Jaggayyapeta Mandal include refrigeration, cold storage, and controlled atmosphere storage. Fumigation techniques for grain storage in Jaggayyapeta Mandal involve the use of chemical fumigants like phosphine to control insect pests."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "market_info_tenali",
+            "patterns": [
+                "Where can I find market prices for spices in Tenali Mandal?",
+                "How to access agricultural commodity futures market data for Tenali Mandal?",
+                "Are there any mobile apps for real-time market information in Tenali Mandal?"
+            ],
+            "responses": [
+                "Market prices for spices in Tenali Mandal can be found at local spice markets, agricultural produce markets, and online trading platforms. Agricultural commodity futures market data for Tenali Mandal can be accessed through commodity exchanges like NCDEX and MCX. Mobile apps for real-time market information in Tenali Mandal include AgriApp and AgriMarket."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "farm_technology_narasaraopet",
+            "patterns": [
+                "What are the benefits of using drones in agriculture in Narasaraopet Mandal?",
+                "How to implement farm automation technologies in Narasaraopet Mandal?",
+                "Are there any demonstrations for precision farming equipment in Narasaraopet Mandal?"
+            ],
+            "responses": [
+                "Benefits of using drones in agriculture in Narasaraopet Mandal include crop monitoring, pest detection, and precision spraying. Farm automation technologies in Narasaraopet Mandal can be implemented through sensor-based irrigation systems, robotic harvesters, and automated climate control systems. Demonstrations for precision farming equipment in Narasaraopet Mandal are conducted by agricultural machinery manufacturers, research institutions, and government agencies."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "livestock_management_mangalagiri",
+            "patterns": [
+                "How to prevent avian influenza outbreaks in poultry farms in Mangalagiri Mandal?",
+                "What are the nutritional requirements for broiler farming in Mangalagiri Mandal?",
+                "Are there any biosecurity measures for dairy farms in Mangalagiri Mandal?"
+            ],
+            "responses": [
+                "Avian influenza outbreaks in poultry farms in Mangalagiri Mandal can be prevented through biosecurity measures, vaccination, and proper waste management. Nutritional requirements for broiler farming in Mangalagiri Mandal include balanced feed formulations with adequate protein, energy, vitamins, and minerals. Biosecurity measures for dairy farms in Mangalagiri Mandal include restricted access, quarantine protocols, and sanitation practices."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "government_schemes_chilakaluripet",
+            "patterns": [
+                "How to avail subsidies for greenhouse construction in Chilakaluripet Mandal?",
+                "What are the components of the Prime Minister Kisan Samman Nidhi (PM-KISAN) scheme in Chilakaluripet Mandal?",
+                "Are there any loan schemes for women farmers in Chilakaluripet Mandal?"
+            ],
+            "responses": [
+                "Subsidies for greenhouse construction in Chilakaluripet Mandal can be availed through government agricultural departments, banks, and horticulture development agencies. Components of the Prime Minister Kisan Samman Nidhi (PM-KISAN) scheme in Chilakaluripet Mandal include income support to small and marginal farmers through direct cash transfers. Loan schemes for women farmers in Chilakaluripet Mandal are available under schemes like the Stree Shakti Package and Mahila Kisan Sashaktikaran Pariyojana (MKSP)."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "agricultural_education_vijayawada",
+            "patterns": [
+                "What are the courses offered by the Regional Agricultural Research Station (RARS) in Vijayawada Mandal?",
+                "How to enroll in farmer training programs conducted by Krishi Vigyan Kendra (KVK) in Vijayawada Mandal?",
+                "Are there any workshops on sustainable agriculture practices in Vijayawada Mandal?"
+            ],
+            "responses": [
+                "Courses offered by the Regional Agricultural Research Station (RARS) in Vijayawada Mandal include diploma programs, certificate courses, and short-term training workshops on various agricultural subjects. Enrollment in farmer training programs conducted by Krishi Vigyan Kendra (KVK) in Vijayawada Mandal can be done through KVK offices, agricultural extension centers, and online registration portals. Workshops on sustainable agriculture practices in Vijayawada Mandal cover topics such as organic farming, conservation agriculture, and agroecology."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "farming_advice_narasaraopet",
+            "patterns": [
+                "What are the best practices for soil moisture management in Narasaraopet Mandal?",
+                "How to select drought-tolerant crop varieties for cultivation in Narasaraopet Mandal?",
+                "Are there any community-driven initiatives for water conservation in Narasaraopet Mandal?"
+            ],
+            "responses": [
+                "Best practices for soil moisture management in Narasaraopet Mandal include mulching, conservation tillage, and drip irrigation. Drought-tolerant crop varieties for cultivation in Narasaraopet Mandal are selected based on traits like deep root systems, efficient water use, and stress tolerance. Community-driven initiatives for water conservation in Narasaraopet Mandal involve rainwater harvesting, watershed management, and community irrigation projects."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "soil_management_machilipatnam",
+            "patterns": [
+                "How to prevent soil salinity in Machilipatnam Mandal?",
+                "What are the benefits of soil aeration in Machilipatnam Mandal?",
+                "Are there any soil health improvement programs in Machilipatnam Mandal?"
+            ],
+            "responses": [
+                "Soil salinity in Machilipatnam Mandal can be prevented through proper drainage, leaching, and gypsum application. Benefits of soil aeration in Machilipatnam Mandal include improved root growth, nutrient uptake, and soil structure. Soil health improvement programs in Machilipatnam Mandal are conducted by government agricultural departments, NGOs, and research institutions."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "irrigation_management_gudivada",
+            "patterns": [
+                "How to manage irrigation scheduling for rice cultivation in Gudivada Mandal?",
+                "What are the advantages of using sprinkler irrigation in Gudivada Mandal?",
+                "Are there any subsidies for drip irrigation installation in Gudivada Mandal?"
+            ],
+            "responses": [
+                "Irrigation scheduling for rice cultivation in Gudivada Mandal involves monitoring soil moisture, crop growth stage, and weather conditions to optimize water use efficiency. Advantages of using sprinkler irrigation in Gudivada Mandal include uniform water distribution, reduced evaporation losses, and flexibility in irrigation scheduling. Subsidies for drip irrigation installation in Gudivada Mandal are available under government schemes like the Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) and state agricultural subsidy programs."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "weather_climate_nuzvid",
+            "patterns": [
+                "How does climate variability affect crop yields in Nuzvid Mandal?",
+                "What are the temperature requirements for optimal fruit set in Nuzvid Mandal?",
+                "Are there any frost protection measures for orchards in Nuzvid Mandal?"
+            ],
+            "responses": [
+                "Climate variability affects crop yields in Nuzvid Mandal by influencing temperature, rainfall, and humidity levels during critical growth stages. Temperature requirements for optimal fruit set in Nuzvid Mandal vary depending on the crop species, with certain fruits like mangoes and citrus requiring warm temperatures for flowering and fruit development. Frost protection measures for orchards in Nuzvid Mandal include overhead sprinklers, wind machines, and frost blankets."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "pest_disease_management_jaggayyapeta",
+            "patterns": [
+                "How to control bacterial diseases in vegetable crops in Jaggayyapeta Mandal?",
+                "What are the integrated pest management (IPM) strategies for paddy fields in Jaggayyapeta Mandal?",
+                "Are there any biocontrol agents for managing fruit flies in Jaggayyapeta Mandal?"
+            ],
+            "responses": [
+                "Bacterial diseases in vegetable crops in Jaggayyapeta Mandal can be controlled through crop rotation, sanitation, and copper-based fungicides. Integrated pest management (IPM) strategies for paddy fields in Jaggayyapeta Mandal include biological control, cultural practices, and judicious use of pesticides. Biocontrol agents for managing fruit flies in Jaggayyapeta Mandal include parasitoids, predators, and microbial pesticides."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "crop_protection_tenali",
+            "patterns": [
+                "What are the methods for weed control in sugarcane fields in Tenali Mandal?",
+                "How to protect crops from rodent damage in Tenali Mandal?",
+                "Are there any bird repellent techniques for protecting fruit orchards in Tenali Mandal?"
+            ],
+            "responses": [
+                "Methods for weed control in sugarcane fields in Tenali Mandal include manual weeding, herbicide application, and intercropping with smother crops. Crops in Tenali Mandal can be protected from rodent damage through baiting, trapping, and habitat modification. Bird repellent techniques for protecting fruit orchards in Tenali Mandal include visual deterrents, sonic devices, and netting."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "market_info_mangalagiri",
+            "patterns": [
+                "How to access price information for floriculture products in Mangalagiri Mandal?",
+                "Where can I find export market opportunities for spices in Mangalagiri Mandal?",
+                "Are there any e-commerce platforms for selling organic produce in Mangalagiri Mandal?"
+            ],
+            "responses": [
+                "Price information for floriculture products in Mangalagiri Mandal can be accessed through floriculture markets, exporters, and online trading platforms. Export market opportunities for spices in Mangalagiri Mandal can be found through trade associations, export promotion councils, and government export promotion agencies. E-commerce platforms for selling organic produce in Mangalagiri Mandal include AgriBazaar, Farm2Kitchen, and BigHaat."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "farm_technology_chilakaluripet",
+            "patterns": [
+                "What are the advantages of using GPS technology in precision farming in Chilakaluripet Mandal?",
+                "How to implement solar-powered irrigation systems in Chilakaluripet Mandal?",
+                "Are there any subsidies for purchasing agricultural machinery in Chilakaluripet Mandal?"
+            ],
+            "responses": [
+                "Advantages of using GPS technology in precision farming in Chilakaluripet Mandal include accurate field mapping, variable rate application, and yield monitoring for better crop management. Solar-powered irrigation systems in Chilakaluripet Mandal can be implemented using solar panels, submersible pumps, and drip/sprinkler systems to enhance water use efficiency. Subsidies for purchasing agricultural machinery in Chilakaluripet Mandal are available under government schemes like the Sub-Mission on Agricultural Mechanization (SMAM) and the National Bank for Agriculture and Rural Development (NABARD) schemes."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "livestock_management_vijayawada",
+            "patterns": [
+                "What are the housing requirements for poultry farms in Vijayawada Mandal?",
+                "How to prevent hoof diseases in cattle in Vijayawada Mandal?",
+                "Are there any training programs for backyard poultry rearing in Vijayawada Mandal?"
+            ],
+            "responses": [
+                "Housing requirements for poultry farms in Vijayawada Mandal include proper ventilation, temperature control, and biosecurity measures to ensure bird health and productivity. Hoof diseases in cattle in Vijayawada Mandal can be prevented through regular hoof trimming, clean housing conditions, and footbath treatments. Training programs for backyard poultry rearing in Vijayawada Mandal are conducted by government veterinary departments, agricultural extension agencies, and poultry associations."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "government_schemes_narasaraopet",
+            "patterns": [
+                "How to apply for subsidies under the Rashtriya Krishi Vikas Yojana (RKVY) in Narasaraopet Mandal?",
+                "What are the components of the National Mission on Sustainable Agriculture (NMSA) in Narasaraopet Mandal?",
+                "Are there any credit schemes for farm mechanization in Narasaraopet Mandal?"
+            ],
+            "responses": [
+                "Subsidies under the Rashtriya Krishi Vikas Yojana (RKVY) in Narasaraopet Mandal can be applied through the District Agriculture Office or online portals specified by the government. Components of the National Mission on Sustainable Agriculture (NMSA) in Narasaraopet Mandal include promotion of climate-resilient agriculture, soil health management, and water conservation practices. Credit schemes for farm mechanization in Narasaraopet Mandal are available through banks, cooperatives, and government agricultural finance institutions."
+            ],
+            "context": [""]
+        },
+        {
+            "tag": "agricultural_education_machilipatnam",
+            "patterns": [
+                "What are the benefits of agricultural training programs offered by KVK Machilipatnam?",
+                "How to enroll in diploma courses in agriculture at government polytechnic colleges in Machilipatnam Mandal?",
+                "Are there any vocational courses for farm laborers in Machilipatnam Mandal?"
+            ],
+            "responses": [
+                "Benefits of agricultural training programs offered by KVK Machilipatnam include hands-on learning, exposure to modern farming techniques, and access to expert guidance for farmers and rural youth. Enrollment in diploma courses in agriculture at government polytechnic colleges in Machilipatnam Mandal can be done through the state's technical education department and respective college admissions procedures. Vocational courses for farm laborers in Machilipatnam Mandal cover topics such as crop cultivation, pest management, and farm machinery operation, and are offered by government skill development agencies and agricultural training institutes."
+            ],
+            "context": [""]
+        }
+   ]
+}
